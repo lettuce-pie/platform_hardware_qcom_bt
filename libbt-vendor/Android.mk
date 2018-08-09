@@ -20,6 +20,7 @@ ifeq ($(BOARD_HAVE_BLUETOOTH_QCOM),true)
 
 include $(CLEAR_VARS)
 
+LOCAL_CFLAGS += -Wno-error
 
 LOCAL_SRC_FILES := \
         src/bt_vendor_qcom.c \
